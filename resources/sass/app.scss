@@ -52,3 +52,164 @@ header{
     }
 
 }
+
+// STILE FOOTER
+
+#head_footer{
+    height: 115px;
+    background-color: #0c7cec;
+    position: relative;
+    z-index: 10;
+
+    .container_footer{
+        width: 60%;
+        margin: 0 auto;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+
+        ul{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+
+
+
+
+            li{
+                display: flex;
+                align-items: center;
+                margin-right: 20px;
+                color: white;
+
+
+                img{
+                    width: 50px;
+                    height: 50px;
+                    margin-right: 10px;
+                }
+            }
+
+        }
+    }
+}
+#main_footer{
+    height: 350px;
+    background-image: url(/public/images/footer-bg.jpg);
+
+
+    .container{
+        width: 60%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+
+        #nav_footer{
+            width: 50%;
+            height: 100%;
+            // menu footer
+            display: flex;
+            align-items: center;
+
+            .row{
+                display: flex;
+
+                .col_1 , .col_2 , .col_3 {
+
+                margin-right: 20px;
+
+                h3{
+                    color: white;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+                ul{
+                    list-style-type: none;
+
+                    li{
+
+                        margin-bottom: 5px;
+                        a{
+                        text-decoration: none;
+                        color: #959595;
+
+                    }
+                    }
+                }
+
+            }
+            }
+
+
+
+
+
+
+
+        }
+
+        #image_background{
+            width: 50%;
+            position: relative;
+
+
+            img{
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto auto;
+            position: absolute;
+
+
+            }
+        }
+
+
+    }
+}
+#bottom_footer{
+    height: 110px;
+    background-color: #222222;
+    position: relative;
+
+
+    .container{
+        width: 60%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+
+        a{
+            text-decoration: none;
+            color: white;
+            border: 1px solid #0C7CEC;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: 700;
+
+        }
+        ul{
+        display: flex;
+        width: 200px;
+
+            li{
+                color: white;
+                list-style-type: none;
+                margin-right: 20px;
+
+
+            }
+        }
+
+
+
+
+    }
+
+
+}
+
+
