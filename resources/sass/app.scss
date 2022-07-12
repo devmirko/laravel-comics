@@ -222,7 +222,7 @@ main{
 
     #hero{
     width: 100%;
-    height: 350px;
+    min-height: 350px;
     background-image: url('/images/jumbotron.jpg');
     background-position-y: -50px;
     background-size: cover;
@@ -231,7 +231,7 @@ main{
 #series{
     width: 60%;
     margin: 0 auto;
-    height: 50px;
+    min-height: 50px;
     position: relative;
 
     #current{
@@ -249,22 +249,23 @@ main{
 }
 
 #card_container{
-    height: 500px;
+    min-height: 700px;
     display: flex;
     justify-content: center;
     align-items: center;
 
-
+    //    contenitore delle card
        .container{
         width: 60%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
 
+
         .card{
             flex-basis: 15%;
             margin-left: 10px;
-            height: 200px;
+
 
             .box_image{
                 width: 100%;
@@ -298,13 +299,13 @@ main{
 #row_more{
     width: 60%;
     margin: 0 auto;
-    height: 50px;
+    min-height: 50px;
     display: flex;
     justify-content: center;
 
     #read_more{
         width: 200px;
-        height: 50px;
+        min-height: 50px;
         background-color: #0C7CEC;
         line-height: 50px;
         text-align: center;
