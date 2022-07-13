@@ -43,7 +43,7 @@
     </section>
 
     <section id="descrizione">
-        <div class="container">
+        <div class="container_description">
 
             {{-- creatori --}}
             <div class="talent">
@@ -52,18 +52,22 @@
                     <h3>Talent</h3>
                 </div>
                 {{-- art by --}}
-                <div class="art">
+                <div class="row_description">
                     <h4>art by:</h4>
-                    @foreach ($card["artists"] as $art)
-                        <p>{{$art}}</p>
-                    @endforeach
+                    <div class="container_author">
+                        @foreach ($card["artists"] as $art)
+                            <a href="">{{$art}}</a>
+                        @endforeach
+                    </div>
                 </div>
                 {{-- written by --}}
-                <div class="written">
+                <div class="row_description">
                     <h4>Written by</h4>
+                   <div class="container_author">
                     @foreach ($card["writers"] as $writen)
-                        <p>{{$writen}}</p>
-                    @endforeach
+                    <a href="">{{$writen}}</a>
+                     @endforeach
+                   </div>
                 </div>
             </div>
 
@@ -74,17 +78,17 @@
                     <h3>Specs</h3>
                 </div>
                 {{-- Series --}}
-                <div class="Series">
+                <div class="row_specs">
                     <h4>Series:</h4>
                     <p>{{ $card['series'] }}</p>
                 </div>
                 {{-- US price --}}
-                <div class="price">
+                <div class="row_specs">
                     <h4>U.S. Price:</h4>
                     <p>{{ $card['price']}}</p>
                 </div>
                 {{-- On Sale Date --}}
-                <div class="Sale_date">
+                <div class="row_specs">
                     <h4>On Sale Date:</h4>
                     <p>{{ $card['sale_date']}}</p>
                 </div>
@@ -96,6 +100,7 @@
 @endsection
 
 <style scoped>
+/* sezione card */
 #series_card{
    background-color:#0C7CEC;
    min-height: 50px;
@@ -186,6 +191,63 @@
 
 }
 
+/* sezione descrizione card */
+#descrizione{
+    min-height: 400px;
+    background-color: #F6F6F6;
+    display: flex;
+    justify-content: center
+}
+
+.container_description{
+    width: 60%;
+    display: flex;
+
+}
+
+.talent{
+    width: 50%;
+    padding-right: 20px;
+
+}
+
+.title_talent{
+   min-height: 50px;
+   display: flex;
+   align-items: center;
+   font-size: 28px;
+   border-bottom: 2px solid  rgba(204, 204, 204, 0.499);;
+}
+
+.row_description{
+    display: flex;
+    padding: 20px 0;
+    border-bottom: 2px solid rgba(204, 204, 204, 0.499);;
+}
+
+.row_description h4{
+    min-width: 20%;
+}
+
+.container_author{
+    min-width: 80%;
+}
+
+
+.specs{
+    width: 50%;
+    padding-left: 20px;
+}
+
+.row_specs{
+    display: flex;
+    padding: 20px 0;
+    border-bottom: 2px solid rgba(204, 204, 204, 0.499);
+}
+
+.row_specs h4{
+    margin-right: 100px;
+}
 
 
 </style>
