@@ -9,13 +9,15 @@
         <!-- immagine hero in background-->
     </section>
     <section id="series_card">
-        <img src="{{$card['thumb']}}" alt="questa è un immagine">
+        <div class="container_series">
+            <img src="{{$card['thumb']}}" alt="questa è un immagine" id="poster_card">
+        </div>
     </section>
     <section id="cards_container">
         <div class="container_cards">
             <div class="box_text">
                 {{-- titolo --}}
-                <h2>{{ $card['title']}}</h2>
+                <h2 class="title">{{ $card['title']}}</h2>
                 {{-- contenitore prezzo --}}
                 <div class="price_product">
                     <div class="price_now">
@@ -27,11 +29,11 @@
                     <button class="btn">Check Availability</button>
                 </div>
                 {{-- descrizione --}}
-                <p>{{ $card['description'] }}</p>
+                <p class="text_descr">{{ $card['description'] }}</p>
             </div>
             <div class="box_adv">
                 {{-- titolo adv --}}
-                <div>ADVERTISEMENT</div>
+                <div class="title_adv">ADVERTISEMENT</div>
                 {{-- immagine adv --}}
                 <div class="box_img">
                     <img src="{{ asset('images/adv.jpg') }}" alt="questa è un immagine">
@@ -92,5 +94,100 @@
 </main>
 
 @endsection
+
+<style scoped>
+#series_card{
+   background-color:#0C7CEC;
+   min-height: 50px;
+
+
+
+
+
+}
+
+.container_series{
+    width: 60%;
+    margin: 0 auto;
+    position: relative
+
+}
+
+#poster_card{
+    border: 2px solid white;
+    position: absolute;
+    left: 0;
+    bottom: -25;
+}
+
+#cards_container{
+    min-height: 600px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center
+
+}
+
+.container_cards{
+    width: 60%;
+    display: flex;
+
+}
+
+.box_text{
+    padding-right: 20px;
+}
+
+.title{
+    font-size: 30px;
+    margin-bottom: 10px;
+
+}
+
+.price_product{
+    width: 100%;
+    min-height: 30px;
+    background-color:#55BA59;
+    display: flex;
+    margin-bottom: 20px;
+
+}
+
+.price_now{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-right: 2px solid black
+}
+
+.btn{
+    width: 20%;
+    background-color: #55BA59;
+    border: none;
+    cursor: pointer;
+}
+
+.text_descr{
+    font-size: 24px;
+    color: #838583;
+}
+
+.title_adv{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    color: #838583;
+    min-height: 30px;
+
+
+}
+
+
+
+</style>
 
 
