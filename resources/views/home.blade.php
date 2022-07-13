@@ -14,7 +14,7 @@
     <section id="card_container">
         <div class="container">
             @foreach ($arrComics as $item)
-                <a class="card" href="">
+                <a class="card" href="{{  route('card_page', ['id' => $item['id']]) }}">
                     <div class="box_image">
                          <img src="{{$item['thumb']}}" alt="">
                     </div>

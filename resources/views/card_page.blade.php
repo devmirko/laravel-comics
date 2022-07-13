@@ -9,10 +9,10 @@
         <!-- immagine hero in background-->
     </section>
     <section id="series">
-        <img src="" alt="">
+        <img src="{{$card['thumb']}}" alt="questa è un immagine">
     </section>
-    <section id="card_container">
-        <div class="container">
+    <section id="cards_container">
+        <div class="container_cards">
             <div class="box_text">
                 {{-- titolo --}}
                 <h2>{{ $card['title']}}</h2>
@@ -23,10 +23,10 @@
             </div>
             <div class="box_adv">
                 {{-- titolo adv --}}
-                <div></div>
+                <div>ADVERTISEMENT</div>
                 {{-- immagine adv --}}
                 <div class="box_img">
-                    <img src="" alt="">
+                    <img src="{{ asset('images/adv.jpg') }}" alt="questa è un immagine">
                 </div>
             </div>
         </div>

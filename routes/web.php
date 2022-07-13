@@ -19,7 +19,7 @@ Route::get('/', function () {
     ]);
 })->name('home');
 
-Route::get('/home/{id}', function ($id) {
+Route::get('/{id}', function ($id) {
     // inizializiamo la variabile card nulla
     $card = null;
     // cicliamo con un for each direttamente sul array 'comics'
