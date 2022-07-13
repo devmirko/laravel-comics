@@ -14,15 +14,14 @@
     <section id="card_container">
         <div class="container">
             @foreach ($arrComics as $item)
-                <div class="card">
+                <a class="card" href="">
                     <div class="box_image">
                          <img src="{{$item['thumb']}}" alt="">
                     </div>
                     <div class="box_title">
                         <h4>{{ $item['title'] }}</h4>
                     </div>
-                </div>
-
+                </a>
             @endforeach
         </div>
     </section>
