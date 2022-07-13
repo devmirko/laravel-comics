@@ -8,7 +8,7 @@
     <section id="hero">
         <!-- immagine hero in background-->
     </section>
-    <section id="series">
+    <section id="series_card">
         <img src="{{$card['thumb']}}" alt="questa è un immagine">
     </section>
     <section id="cards_container">
@@ -17,7 +17,15 @@
                 {{-- titolo --}}
                 <h2>{{ $card['title']}}</h2>
                 {{-- contenitore prezzo --}}
-                <div></div>
+                <div class="price_product">
+                    <div class="price_now">
+                        {{-- prezzo --}}
+                        <h4>{{ $card['price']}}</h4>
+                        {{-- status --}}
+                        <span>AVAILABLE</span>
+                    </div>
+                    <button class="btn">Check Availability</button>
+                </div>
                 {{-- descrizione --}}
                 <p>{{ $card['description'] }}</p>
             </div>
@@ -31,6 +39,7 @@
             </div>
         </div>
     </section>
+
     <section id="descrizione">
         <div class="container">
 
@@ -42,13 +51,17 @@
                 </div>
                 {{-- art by --}}
                 <div class="art">
-                    <h4></h4>
-                    <p></p>
+                    <h4>art by:</h4>
+                    @foreach ($card["artists"] as $art)
+                        <p>{{$art}}</p>
+                    @endforeach
                 </div>
                 {{-- written by --}}
                 <div class="written">
-                    <h4></h4>
-                    <p></p>
+                    <h4>Written by</h4>
+                    @foreach ($card["writers"] as $writen)
+                        <p>{{$writen}}</p>
+                    @endforeach
                 </div>
             </div>
 
@@ -61,17 +74,17 @@
                 {{-- Series --}}
                 <div class="Series">
                     <h4>Series:</h4>
-                    <p></p>
+                    <p>{{ $card['series'] }}</p>
                 </div>
                 {{-- US price --}}
                 <div class="price">
                     <h4>U.S. Price:</h4>
-                    <p></p>
+                    <p>{{ $card['price']}}</p>
                 </div>
                 {{-- On Sale Date --}}
                 <div class="Sale_date">
                     <h4>On Sale Date:</h4>
-                    <p></p>
+                    <p>{{ $card['sale_date']}}</p>
                 </div>
             </div>
         </div>
@@ -79,3 +92,5 @@
 </main>
 
 @endsection
+
+
