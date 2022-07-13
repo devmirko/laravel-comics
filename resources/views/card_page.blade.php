@@ -95,6 +95,34 @@
             </div>
         </div>
     </section>
+
+    <section id="card_icon">
+        <div class="container_icon">
+            <ul>
+                <li>
+                    <img src="/images/buy-comics-digital-comics.png" alt="">
+                    <span>DIGITAL COMICS</span>
+                </li>
+                <li>
+                    <img src="/images/buy-comics-merchandise.png" alt="">
+                    <span>DC MERCHAINDAISE</span>
+                </li>
+                <li>
+                    <img src="/images/buy-comics-subscriptions.png" alt="">
+                    <span>SUBSCRIPTION</span>
+                </li>
+                <li>
+                    <img src="/images/buy-comics-shop-locator.png" alt="">
+                    <span>COMIC SHOP LOCATOR</span>
+                </li>
+                <li>
+                    <img src="/images/buy-dc-power-visa.svg" alt="">
+                    <span>DC POWER VISA</span>
+                </li>
+
+            </ul>
+        </div>
+    </section>
 </main>
 
 @endsection
@@ -196,7 +224,10 @@
     min-height: 400px;
     background-color: #F6F6F6;
     display: flex;
-    justify-content: center
+    justify-content: center;
+    position: relative;
+    z-index: 100;
+
 }
 
 .container_description{
@@ -248,6 +279,44 @@
 .row_specs h4{
     margin-right: 100px;
 }
+/* sezione icon */
+#card_icon{
+    background-color:  #F6F6F6;
+    position: relative;
+    z-index: 10;
+    border-top: 2px solid rgba(204, 204, 204, 0.499);
+}
+
+.container_icon{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.container_icon ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+.container_icon ul li{
+    display: flex;
+    margin-right: 20px;
+    color: rgba(204, 204, 204, 0.499);
+    border-right: 2px solid rgba(204, 204, 204, 0.499);
+    border-left: 2px solid rgba(204, 204, 204, 0.499);
+    padding: 10px
+}
+
+.container_icon ul li img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+
 
 
 </style>

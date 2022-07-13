@@ -153,7 +153,6 @@ header .container ul li a:hover {
 
 main {
   background-color: #1C1C1C;
-  padding-bottom: 20px;
 }
 main #hero {
   width: 100%;
@@ -219,6 +218,7 @@ main #row_more {
   min-height: 50px;
   display: flex;
   justify-content: center;
+  margin-bottom: 20px;
 }
 main #row_more #read_more {
   width: 200px;

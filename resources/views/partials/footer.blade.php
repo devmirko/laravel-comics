@@ -1,31 +1,4 @@
 <footer>
-    <section id="head_footer">
-        <div class="container_footer">
-            <ul>
-                <li>
-                    <img src="/images/buy-comics-digital-comics.png" alt="">
-                    <span>DIGITAL COMICS</span>
-                </li>
-                <li>
-                    <img src="/images/buy-comics-merchandise.png" alt="">
-                    <span>DC MERCHAINDAISE</span>
-                </li>
-                <li>
-                    <img src="/images/buy-comics-subscriptions.png" alt="">
-                    <span>SUBSCRIPTION</span>
-                </li>
-                <li>
-                    <img src="/images/buy-comics-shop-locator.png" alt="">
-                    <span>COMIC SHOP LOCATOR</span>
-                </li>
-                <li>
-                    <img src="/images/buy-dc-power-visa.svg" alt="">
-                    <span>DC POWER VISA</span>
-                </li>
-
-            </ul>
-        </div>
-    </section>
     <section id="main_footer">
         <div class="container">
             <div id="nav_footer">
